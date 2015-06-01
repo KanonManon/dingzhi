@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no"  />
+    <meta name="description" content="" />
+    <title>私人定制手串</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
+    <link rel="stylesheet" href="bower_components/onsenui/build/css/onsenui.css" />
+    <link rel="stylesheet" href="bower_components/onsenui/build/css/onsen-css-components.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+
+    <!-- endbuild -->
+  </head>
+
+  <body ng-app="app" class="app">
+    <!-- Add your site or application content here -->
+    <div class="container" ng-controller="MainCtrl" id="main">
+      <!-- Router -->
+      <ons-navigator title="Navigator" var="myNavigator">
+      </ons-navigator>
+      <!-- Loading -->
+      <ons-modal var="modal">
+        <ons-icon icon="ion-loading-bg">
+          <ons-icon icon="ion-load-a" spin="true"></ons-icon>
+        </ons-icon>
+      </ons-modal>
+    </div>
+
+    <script type="text/ons-template" id="main.html">
+      <ons-page><ons-toolbar></ons-toolbar></ons-page>
+    </script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-ui-select/dist/select.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/onsenui/build/js/onsenui.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+
+    <!-- endbuild -->
+    <script src="cordova.js"></script>
+  </body>
+</html>
